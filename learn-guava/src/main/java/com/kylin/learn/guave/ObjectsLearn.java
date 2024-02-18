@@ -41,15 +41,17 @@ public class ObjectsLearn {
      * 学习ComparisonChain
      */
     public void learnComparisonChain() {
+        //初始化两个person对象
         Person person = Person.Builder.builder().firstName("kylin").lastName("Hk").zipCode(1).build();
         Person person1 = Person.Builder.builder().firstName("kylin").lastName("ZH").zipCode(2).build();
+        //比较两个Person对象
         int i = person.compareTo(person1);
         System.out.println(i);
 
-
+        //初始化两个LearnPerson对象
         LearnPerson learnPerson = LearnPerson.Builder.builder().firstName("kylin").lastName("Hk").zipCode(1).build();
         LearnPerson learnPerson1 = LearnPerson.Builder.builder().firstName("kylin").lastName("ZH").zipCode(2).build();
-
+        //比较两个LearnPerson对象
         int i1 = learnPerson.compareTo(learnPerson1);
         System.out.println(i1);
 
