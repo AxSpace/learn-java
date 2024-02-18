@@ -18,6 +18,7 @@
         <module>learn-jxls</module>
         <module>learn-effective-java</module>
         <module>learn-guava</module>
+        <module>learn-groovy</module>
     </modules>
 
     <properties>
