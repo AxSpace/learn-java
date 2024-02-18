@@ -12,36 +12,47 @@ import java.util.*;
  * @date 2024/2/16 10:20
  */
 public class OrderingLearn {
+
+
+    private static final OrderingLearn INSTANCE = new OrderingLearn();
+
+    public static OrderingLearn getInstance() {
+        return INSTANCE;
+    }
+
+    private OrderingLearn() {
+    }
+
+
     public static void main(String[] args) {
         //初始化一个示例
-        OrderingLearn orderingLearn = new OrderingLearn();
 
         //学习自然排序
-        orderingLearn.learnNatural();
+        getInstance().learnNatural();
 
         //学习使用toString排序
-        orderingLearn.learnUsingToString();
+        getInstance().learnUsingToString();
 
         //学习使用预Comparator进行排序
-        orderingLearn.learnFromComparator();
+        getInstance().learnFromComparator();
 
         //学习Ordering.reverse()
-        orderingLearn.learnOrderingReverse();
+        getInstance().learnOrderingReverse();
 
         //学习Ordering.nullsFirst()
-        orderingLearn.learnOrderingNullsFirst();
+        getInstance().learnOrderingNullsFirst();
 
         //学习Ordering.nullsLast()
-        orderingLearn.learnOrderingNullsLast();
+        getInstance().learnOrderingNullsLast();
 
         //学习Ordering.compound()
-        orderingLearn.learnOrderingCompound();
+        getInstance().learnOrderingCompound();
 
         //学习Ordering.onResultOf()
-        orderingLearn.learnOrderingOnResultOf();
+        getInstance().learnOrderingOnResultOf();
 
         //学习Ordering.min()和Ordering.max()
-        orderingLearn.learnOrderingMinAndMax();
+        getInstance().learnOrderingMinAndMax();
 
     }
 
