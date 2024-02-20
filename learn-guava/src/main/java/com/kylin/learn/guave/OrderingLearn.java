@@ -26,33 +26,33 @@ public class OrderingLearn {
 
     public static void main(String[] args) {
         //初始化一个示例
-
+        OrderingLearn instance = getInstance();
         //学习自然排序
-        getInstance().learnNatural();
+        instance.learnNatural();
 
         //学习使用toString排序
-        getInstance().learnUsingToString();
+        instance.learnUsingToString();
 
         //学习使用预Comparator进行排序
-        getInstance().learnFromComparator();
+        instance.learnFromComparator();
 
         //学习Ordering.reverse()
-        getInstance().learnOrderingReverse();
+        instance.learnOrderingReverse();
 
         //学习Ordering.nullsFirst()
-        getInstance().learnOrderingNullsFirst();
+        instance.learnOrderingNullsFirst();
 
         //学习Ordering.nullsLast()
-        getInstance().learnOrderingNullsLast();
+        instance.learnOrderingNullsLast();
 
         //学习Ordering.compound()
-        getInstance().learnOrderingCompound();
+        instance.learnOrderingCompound();
 
         //学习Ordering.onResultOf()
-        getInstance().learnOrderingOnResultOf();
+        instance.learnOrderingOnResultOf();
 
         //学习Ordering.min()和Ordering.max()
-        getInstance().learnOrderingMinAndMax();
+        instance.learnOrderingMinAndMax();
 
     }
 

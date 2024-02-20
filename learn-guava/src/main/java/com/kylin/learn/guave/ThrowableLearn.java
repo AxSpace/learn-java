@@ -23,16 +23,17 @@ public class ThrowableLearn {
 
 
     public static void main(String[] args) {
+        ThrowableLearn instance = getInstance();
         // 学习Throwables.throwIfInstanceOf()
-        getInstance().learnThrowIfInstanceOf();
+        instance.learnThrowIfInstanceOf();
         // 学习Throwables.throwIfUnchecked()
-        getInstance().learnThrowIfUnchecked();
+        instance.learnThrowIfUnchecked();
         // 学习Throwables.getRootCause()
-        getInstance().learnGetRootCause();
+        instance.learnGetRootCause();
         // 学习Throwables.getCauseChain()
-        getInstance().learnGetCauseChain();
+        instance.learnGetCauseChain();
         // 学习Throwables.getStackTraceAsString()
-        getInstance().learnGetStackTraceAsString();
+        instance.learnGetStackTraceAsString();
     }
 
 

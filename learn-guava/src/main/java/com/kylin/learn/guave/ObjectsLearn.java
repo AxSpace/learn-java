@@ -25,15 +25,15 @@ public class ObjectsLearn {
     }
 
     public static void main(String[] args) {
-
+        ObjectsLearn instance = getInstance();
         // 学习Objects.equals()
-        getInstance().learnEquals();
+        instance.learnEquals();
         // 学习Objects.hashCode()
-        getInstance().learnHashCode();
+        instance.learnHashCode();
         // 学习MoreObjects.toStringHelper()
-        getInstance().learnMoreObjectsToString();
+        instance.learnMoreObjectsToString();
         //学习ComparisonChain
-        getInstance().learnComparisonChain();
+        instance.learnComparisonChain();
 
     }
 

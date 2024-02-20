@@ -20,11 +20,13 @@ public class PreconditionsLearn {
 
     public static void main(String[] args) {
 
+        PreconditionsLearn instance = getInstance();
+
         //checkElementIndex
-        getInstance().learnCheckElementIndex();
+        instance.learnCheckElementIndex();
 
         //checkArgument
-        getInstance().learnCheckArgument();
+        instance.learnCheckArgument();
 
     }
 
