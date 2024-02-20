@@ -15,7 +15,6 @@ public class OptionalLearn {
     public static void main(String[] args) {
         Optional<String> optional = Optional.of("hello");
 
-
         optional.get();
 
         optional.isPresent();

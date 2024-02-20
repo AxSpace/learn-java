@@ -8,16 +8,23 @@ import com.google.common.base.Preconditions;
  * @date 2024/2/15 19:58
  */
 public class PreconditionsLearn {
+
+    private static final PreconditionsLearn INSTANCE = new PreconditionsLearn();
+
+    public static PreconditionsLearn getInstance() {
+        return INSTANCE;
+    }
+
+    private PreconditionsLearn() {
+    }
+
     public static void main(String[] args) {
 
-        //初始化示例
-        PreconditionsLearn preconditionsLearn = new PreconditionsLearn();
-
         //checkElementIndex
-        //preconditionsLearn.learnCheckElementIndex();
+        getInstance().learnCheckElementIndex();
 
         //checkArgument
-        preconditionsLearn.learnCheckArgument();
+        getInstance().learnCheckArgument();
 
     }
 
